@@ -5,7 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Semantic examples</title>
+    <link rel="stylesheet" href="./styles.css">
+    
 </head>
 <body>
     <main>
@@ -23,7 +25,7 @@
             <h2>Section 1</h2>
             <p>This is the first section of the website.</p>
             <p>Let´s add a picture</p>
-            <figure>
+            <figure class="picture">
                 <img src=".\data\30921364067_d23e89b5e2_k.jpg" alt="Wanderers">
                 <figcaption>Foto: Daniel Ohlsson, Friluftsfrämjandet</figcaption>
             </figure>
@@ -32,14 +34,18 @@
             <h2>Section 2</h2>
             <p>This is the second section of the website.</p>
             <p>Let´s add a graph</p>
-            <figure>
+            <figure class="graph">
                 <img src="./data/graph_example.png" alt="Graph example from Python">
                 <figcaption>Figure1. Graph example from Python</figcaption>
             </figure>
         </section>
-        <section>
+        <section class="graph">
             <h2> Section 3 where we link to a another page</h2>
             <a href="./plot.html">MyPlotly plot</a>
+        </section>
+        <section class="dynamic">
+            <h2> Section 4 where we add something from .js</h2>
+            <div id="inputtext"></div>
         </section>
         <footer>
             <p>&copy; 2024 Skill Utbildning AB</p>
@@ -55,4 +61,5 @@
 
     </main>
 </body>
+<script src="./scripts.js"></script>
 </html>
